@@ -20,7 +20,7 @@ class Shoe
       else
         BRANDS << brand
         @brand = brand
-      end        
-    end        
+      end
+    end
   end
-end    
+end
