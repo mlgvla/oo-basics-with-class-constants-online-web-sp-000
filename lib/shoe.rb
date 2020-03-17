@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -14,6 +16,7 @@ class Shoe
   end
 
   def brand(brand)
+    binding.pry
     BRANDS.each do
       if BRANDS.include?(brand)
         @brand = brand
