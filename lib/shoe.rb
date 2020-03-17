@@ -16,14 +16,6 @@ class Shoe
   end
 
   def brand(brand)
-    binding.pry
-    BRANDS.each do
-      if BRANDS.include?(brand)
-        @brand = brand
-      else
-        BRANDS << brand
-        @brand = brand
-      end
-    end
+  
   end
 end
