@@ -2,6 +2,8 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  BRANDS = []
+
   def initialize(brand)
     @brand = brand
   end
@@ -11,4 +13,14 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-end
+  def brand(brand)
+    BRANDS.each do
+      if BRANDS.include?(brand)
+        @brand = brand
+      else
+        BRANDS << brand
+        @brand = brand
+      end        
+    end        
+  end
+end    
